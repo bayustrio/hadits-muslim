@@ -9,9 +9,9 @@
     display:flex;
     justify-content:space-around;
     background-color: #FEAD59;
-    transition:  3s ease-in-out;
+    /* transition:  3s ease-in-out; */
     border-radius: 10px;
-    width:25%;
+    width:35%;
 }
 
 .section-hadits .text-perawi .text-hadits{
@@ -22,11 +22,12 @@
       align-items:center
 }
 
+
 .section-hadits .text-perawi .active{
-    margin:auto 0;
-    width:25%;
-    transition:  3s;
-    justify-content: space-between;
+    /* margin:auto ; */
+    /* width:55%; */
+    padding:0 35px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -40,9 +41,7 @@
 
 .section-hadits .text-perawi .active  {
     color:#fff;
-    width:70px;
-    width:50%;
-    transition: 3s;
+    width:100%;
 }
 
 .section-hadits .text-perawi .active  p{
@@ -121,11 +120,17 @@ user-select: none;
 }
 
 @media (max-width:550px) {    
-    /* .section-hadits{
-        flex-direction: column-reverse;
+    .section-hadits .text-perawi{
+        width:100%;
+        padding:10px;
     }
 
-    .section-hadits .text-perawi{
-        flex-direction: column-reverse;
-    } */
+    .section-hadits .text-perawi .active{
+        width:100%;
+        margin:auto;
+    }
+
+    .card .section-slug .text-hadit-slug p{
+        border-top: 1px solid #BDBDBE;
+    }
 }

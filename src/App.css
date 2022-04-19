@@ -173,22 +173,10 @@
   }
 
   .home .bg-hero{
-    left:0;
-    /* height:20vh;   */
-    right:0;
-    top:0;
-    /* width: 100%; */
-    width: 140%;
-    bottom: 0;
+
     display: none;
   }
 
-  .home .bg-hero img{
-    width:100%;
-    height: auto;
-  }
-
-  
   .home .contact-section{
     justify-content: space-between;
     width:100%;
@@ -223,14 +211,13 @@
 
   .home .hero-section{
     width:100%;
-    /* height:65vh; */
-    padding:0;
-    margin:0;
+    display:flex;
+    justify-content: center;
   }
 
   .home .hero-section img{
-    /* margin:auto 0; */
-    width:100%;
+    margin: 0 auto;
+    width:70%;
   }
 
 

@@ -14,16 +14,26 @@ const Navbar = () => {
         </Link>
 
         <ul className={bar ? "mobile": "desktop"}>
-          <li>
+          {bar ? (
+            <>
+            <li onClick={() => setBar(!bar)}>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
+          <li onClick={() => setBar(!bar)}>
             <Link to="/hadits">Hadits</Link>
           </li>
-        </ul>
+          </>):(
+                      <>
+                      <li >
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link to="/hadits">Hadits</Link>
+                    </li>
+                    </>)
+          }
+
+        </ul> 
         <div onClick={() => setBar(!bar)} className="menu">
           {bar ? <FaTimes /> : <HiMenu />}
         </div>
