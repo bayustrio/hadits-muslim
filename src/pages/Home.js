@@ -14,11 +14,12 @@ const Home = () => {
     "mailto:bayustrio7@gmail.com?subject=SendMail&body=Hello Muhammad Satrio"
   );
   return (
-    <>
+    <div>
       <div className="home">
+        
         <div className="contact-section">
+
           <div className="horizontal"></div>
-          {/* === GITHUB === */}
           <a
             href="https://github.com/bayustrio"
             target="_blank"
@@ -27,7 +28,6 @@ const Home = () => {
             <AiFillGithub />
           </a>
 
-          {/* === EMAIL === */}
           <a
             onClick={() => {
               window.open(sendMessage);
@@ -38,7 +38,6 @@ const Home = () => {
             <ImMail4 />
           </a>
 
-          {/* === FACEBOOK */}
           <a
             className="icon-section"
             href="https://www.facebook.com/bayu.satrio.718689"
@@ -67,8 +66,7 @@ const Home = () => {
       </div>
             
       <About/>
-      {/* <Hadits/> */}
-    </>
+    </div>
   );
 };
 

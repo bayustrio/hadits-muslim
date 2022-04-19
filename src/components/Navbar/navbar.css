@@ -35,8 +35,53 @@
 
 .navbar .desktop li a{
     color:#333;
+    font-size:1.1rem;
 }
 
 .navbar .desktop li a:hover{
     color:#D5727A;
+}
+
+.navbar .menu{
+    display:none;
+}
+
+.navbar .mobile{
+    display: none;
+}
+
+@media (max-width:550px) {
+    .navbar{
+        position: relative;
+    }
+    .navbar .mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 90vh;
+        z-index: 1;
+        top:55px;
+        justify-content: space-around;
+        align-items: center;
+        left:0;
+        right:0;
+        background-color: #333;
+    }
+
+    .navbar .mobile a{
+        font-size:1.4rem;
+        color:#fff;
+    }
+
+    .navbar .desktop{
+        display:none;
+    }
+    .navbar .menu{
+        display:initial;
+        font-size:1.5rem;
+        
+        margin:auto 0;
+    }
+
+    
 }

@@ -27,7 +27,7 @@ const HaditSlug = () => {
     let slug = window.location.pathname.split("/")[2];
 
     axios
-      .get(`${API}hadith/${slug}?page=${paginations}`)
+      .get(`${API}hadith/${slug}?page=${paginations}&limit=10`)
       .then((res) => {
         console.log(res.data);
         const data = res.data;

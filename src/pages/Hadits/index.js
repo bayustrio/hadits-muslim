@@ -37,9 +37,9 @@ const Hadits = () => {
   };
 
   return (
-    <>
+    <section>
       <div>
-        <h1>{Slug}</h1>
+        {/* <h1>{Slug}</h1> */}
         {loading ? (
           data.map((item, idx) => (
             <div key={idx} className="section-hadits">
@@ -71,7 +71,7 @@ const Hadits = () => {
           </div>
         )}
       </div>
-    </>
+    </section>
   );
 };
 
