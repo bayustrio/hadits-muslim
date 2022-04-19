@@ -57,7 +57,7 @@ const Home = () => {
             Waki’ rahimahullah berkata, “Apabila kamu ingin menghafalkan hadits,
             maka amalkanlah hadits itu.”
           </p>
-          <button className="btn-explore">Explore</button>
+          <a href="/hadits" className="btn-explore">Explore</a>
         </div>
 
              <div className="bg-hero"><img src={Rounded} /></div>
