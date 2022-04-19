@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.home{
+  display:flex;
   align-items: center;
+  height:100vh;
+  padding:0 25px;
+  width:100%;
+  gap:85px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.home .contact-section{
+  position: absolute;
+  display:flex;
+  /* gap:80px; */
+  gap:2px;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:25px;
+  /* background-color: yellow; */
+
+  /* margin-right: 105px; */
 }
 
-.App-link {
-  color: #61dafb;
+.home .contact-section .icon-section{
+  padding:0;
+  margin:0 auto;
+  height:30px;
+  color:#333;
 }
 
-@keyframes App-logo-spin {
+.home .contact-section .icon-section:nth-child(2) {
+  /* background-color: #FEAD59; */
+  font-size: 1.5rem;
+}
+
+.home .contact-section .icon-section:nth-child(3) {
+  font-size: 1.3rem;
+  /* background-color: red; */
+  height:25px;
+
+}
+
+.home .contact-section .icon-section:nth-child(4) {
+  font-size: 1.3rem;
+  height: 27px;
+}
+
+.home .contact-section .horizontal{
+  width:2px;
+  margin:0 auto;
+  height:145px;
+  background-color: #FEAD59;
+}
+
+.home .text-section{
+  width:50%;
+  /* background-color: yellow; */
+  padding-left: 45px;
+}
+
+.home .text-section .polygon{
+  position: absolute;
+  z-index: -1;
+  left:50px;
+  transform: rotate(10deg);
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
+}
+
+.home .text-section h1{
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.home .text-section p{
+  margin-top: 30px;
+  color:#BDBDBE;
+  width:55%;
+  font-size: 16px;
+}
+
+.home .text-section .btn-explore{
+  outline:none;
+  border:none;
+  margin-top: 25px;
+  padding:10px 25px;
+  border-radius: 5px;
+  background-color: #FEAD59;
+  color:#fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.home .hero-section{
+  width:40%;
+  /* background-color: red; */
+}
+
+.home .bg-hero {
+  position: absolute;
+  z-index: -1;
+  width:35%;
+  height:100vh;
+  /* top:-1; */
+  bottom: 62px;
+  /* right:100px; */
+  left:75%;
+  /* left:0; */
+}
+
+.home .bg-hero img{
+  /* object-position: 0 -20px; */
+  width:90%;
+  height:100vh;
+}
+
+.home .hero-section img{
+  width:70%;
+}
+/* ============ HOME END ============ */
+
+
+
+/* ============ ABOUT ============*/
+.about{
+  /* flex-wrap: wrap; */
+  margin-top: 20vh;
+  /* justify-content: space-between; */
+  display:flex;
+  align-items: center;
+  width:100%;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+
+.about .hero-about{
+  /* width:45%; */
+  object-position: 160px 0 ;
+}
+
+.about .hero-about img{
+  margin:0 auto;
+  width:80%;
+  /* object-position: 680px 30px; */
+  /* background-color: red; */
+}
+
+.about .text-about{
+  width:35%;
+}
+
+.about .text-about h1{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.about .text-about p{
+  margin-top: 30px;
+  color:#BDBDBE;
+  /* width:85%; */
+  font-size: 16px;
 }

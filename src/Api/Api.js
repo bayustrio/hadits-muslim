@@ -1,0 +1,1 @@
+export const API = 'https://hadis-api-id.vercel.app/'

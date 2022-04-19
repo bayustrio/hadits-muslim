@@ -1,0 +1,115 @@
+.section-hadits {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: left;
+}
+
+.section-hadits .text-perawi{
+    display:flex;
+    justify-content:space-around;
+    background-color: #FEAD59;
+    transition:  3s ease-in-out;
+    border-radius: 10px;
+    width:25%;
+}
+
+.section-hadits .text-perawi .text-hadits{
+    width: 55%;
+    display:flex;
+    color:#fff;
+    flex-wrap: wrap;
+      align-items:center
+}
+
+.section-hadits .text-perawi .active{
+    margin:auto 0;
+    width:25%;
+    transition:  3s;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-hadits .text-perawi .text-hadits a{
+    color:#fff;
+}
+
+.section-hadits .text-perawi .active a{
+    color:#fff;
+}
+
+.section-hadits .text-perawi .active  {
+    color:#fff;
+    width:70px;
+    width:50%;
+    transition: 3s;
+}
+
+.section-hadits .text-perawi .active  p{
+    display: initial;
+}
+
+.section-hadits .text-perawi .text-hadits p{
+    display: none;
+}
+
+.section-hadits .text-perawi .arrow{
+    /* width: 15%; */
+    margin:auto 0;
+    font-size: 1.3rem;
+    color:#fff;
+}
+
+.section-hadits .text-perawi .arrow .active{
+    margin:auto 0;
+
+}
+
+.section-hadits .text-perawi .arrow:hover{
+    color: #f28b1e;
+}
+
+
+
+
+/* === SECTION HADITH SLUG */
+
+.slug{
+    background-color: #2F3540;
+
+}
+.card{
+    display:flex;
+   padding:25px;
+}
+
+.card .section-slug{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0;
+    justify-content: space-between;
+    /* background-color: red; */
+
+}
+
+.card .section-slug .text-hadit-slug{
+    padding: 10px;
+    min-height: 25vh;
+    background-color: #FEAD59;
+    border-radius: 10px;
+    color:#fff;
+
+}
+
+.card .section-slug .text-hadit-slug h1{
+    /* background-color: red; */
+    text-align: right;
+    /* color:#fff; */
+    width:100%;
+
+}
+
+.card .section-slug .text-hadit-slug  p{
+    text-align: left;
+    font-size: 1.2rem;
+}
